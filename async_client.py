@@ -59,7 +59,7 @@ async def connect(i):
 
 async def main():
     tasks = []
-    for i in range(100):
+    for i in range(1000):
         tasks.append(connect(str(i).rjust(8, '0')))
 
     await asyncio.gather(*tasks)

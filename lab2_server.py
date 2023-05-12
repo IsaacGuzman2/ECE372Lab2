@@ -83,7 +83,6 @@ def main():
             thread = Thread(target=middleMan, args=[conn])
             # thread is started
             thread.start()
-
 # Run the `main()` function
 if __name__ == "__main__":
     main()
